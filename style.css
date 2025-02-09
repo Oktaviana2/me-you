@@ -1,0 +1,160 @@
+                                                    body {
+                                                        font-family: Arial, sans-serif;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        background-color: #f4f4f4;
+                                                    }
+                                                    
+                                                    header {
+                                                        display: flex;
+                                                        align-items: center;
+                                                        justify-content: space-between;
+                                                        background-color: #ecc2dc;
+                                                        padding: 15px;
+                                                    }
+                                                    
+                                                    .logo img {
+                                                        height: 50px;
+                                                    }
+                                                    
+                                                    nav ul {
+                                                        list-style: none;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        display: flex;
+                                                    }
+                                                    
+                                                    nav ul li {
+                                                        margin: 0 15px;
+                                                    }
+                                                    
+                                                    nav ul li a {
+                                                        color: white;
+                                                        text-decoration: none;
+                                                        font-weight: bold;
+                                                    }
+                                                    
+                                                    .breadcrumb {
+                                                        padding: 10px;
+                                                        font-size: 14px;
+                                                        color: gray;
+                                                    }
+                                                    
+                                                    article {
+                                                        background: rgb(235, 156, 192);
+                                                        padding: 20px;
+                                                        margin: 20px;
+                                                        border-radius: 5px;
+                                                    }
+                                                    
+                                                    h1 {
+                                                        color: #333;
+                                                    }
+                                                    
+                                                    .author {
+                                                        color: #b6179b;
+                                                        font-size: 14px;
+                                                    }
+                                                    
+                                                    .featured-image img {
+                                                        width: 100%;
+                                                        border-radius: 5px;
+                                                        margin: 15px 0;
+                                                    }
+                                                    
+                                                    p {
+                                                        font-family: 'Times New Roman', Times, serif;
+                                                    }
+                                                    
+                                                    .container {
+                                                        position: relative;
+                                                        width: 200px;
+                                                        height: 200px;
+                                                        margin: auto;
+                                                    }
+                                                    
+                                                    .vinyl {
+                                                        width: 200px;
+                                                        height: 200px;
+                                                        border-radius: 50%;
+                                                        background: url('vinyl.png') center/cover;
+                                                        display: flex;
+                                                        align-items: center;
+                                                        justify-content: center;
+                                                        transition: transform 0.5s ease-in-out;
+                                                    }
+                                                    
+                                                    .vinyl img {
+                                                        width: 1250x;
+                                                        height: 150px;
+                                                        border-radius: 50%;
+                                                    }
+                                                    
+                                                    .playing {
+                                                        animation: spin 4s linear infinite;
+                                                    }
+                                                    
+                                                    @keyframes spin {
+                                                        from {
+                                                            transform: rotate(0deg);
+                                                        }
+                                                        to {
+                                                            transform: rotate(360deg);
+                                                        }
+                                                    }
+                                                    
+                                                    .container {
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        height: 100vh;
+                                                        /* Agar teks ada di tengah halaman */
+                                                        text-align: center;
+                                                        font-family: Arial, sans-serif;
+                                                        margin-top: -50px;
+                                                    }
+                                                    
+                                                    .main-text {
+                                                        font-size: 24px;
+                                                        font-weight: bold;
+                                                    }
+                                                    
+                                                    .sub-text {
+                                                        font-size: 12px;
+                                                        margin-top: 5px;
+                                                    }
+                                                    
+                                                    .film-container {
+                                                        width: 100vw;
+                                                        /* Sesuaikan dengan ukuran strip film */
+                                                        height: 100vh;
+                                                        /* Sesuaikan dengan jumlah foto yang ingin terlihat */
+                                                        overflow: hidden;
+                                                        border: 10px solid black;
+                                                        /* Efek bingkai film */
+                                                        position: relative;
+                                                    }
+                                                    
+                                                    .film-strip {
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        animation: scrollFilm 10s linear infinite;
+                                                    }
+                                                    
+                                                    .film-strip img {
+                                                        width: 100vw;
+                                                        height: auto;
+                                                        display: block;
+                                                        border-bottom: 5px solid black;
+                                                        /* Garis pemisah antar gambar */
+                                                    }
+                                                    
+                                                    @keyframes scrollFilm {
+                                                        0% {
+                                                            transform: translateY(0);
+                                                        }
+                                                        100% {
+                                                            transform: translateY(-100%);
+                                                        }
+                                                    }
